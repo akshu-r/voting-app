@@ -18,10 +18,6 @@ This is a microservices-based **Voting Application** that demonstrates how to bu
 
 ---
 
-## 🧱 Architecture Diagram
-
-![Architecture](./architecture-diagram.png) <!-- Replace with actual path or upload -->
-
 ### 🔍 Description
 
 1. **Vote App** — Frontend written in Python/Flask allowing users to vote between two options.
@@ -47,10 +43,5 @@ git clone https://github.com/akshu-r/voting-app.git
 cd voting-app
 docker-compose up --build
 
-
-**## Output**
-
-![image](https://github.com/user-attachments/assets/217f949d-8803-41a5-ad65-28cfd8ac970d)
-![image](https://github.com/user-attachments/assets/6c1bcb28-e8dd-43ca-83f6-9745db8f4ff6)
 
 
