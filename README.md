@@ -227,15 +227,8 @@ This project uses Kubernetes (EKS) for container orchestration and high availabi
 
 Simplifies EKS cluster management and add-on deployments.
 
-**4. Associate IAM OIDC Provider with EKS**
 
-Enables RBAC using IAM roles for service accounts, improving security and access management.
-
-**5. Create IAM Service Account for EBS CSI Driver**
-
-Grants necessary permissions for the EBS CSI driver to provision persistent volumes dynamically.
-
-**6. Create Kubernetes Namespaces**
+**4. Create Kubernetes Namespaces**
 
 dev → Development
 
@@ -243,24 +236,24 @@ prod → Production
 
 monitoring → Prometheus/Grafana
 
-**7. Deploy MySQL StatefulSet** 
+**5. Deploy MySQL StatefulSet** 
 with Secret, ConfigMaps, Service, and persistent storage (mysql.yaml).
 
-**8. Deploy Backend API** (backend.yaml) with environment variables linked to MySQL Secret/ConfigMap.
+**6. Deploy Backend API** (backend.yaml) with environment variables linked to MySQL Secret/ConfigMap.
 
-**9. Deploy Frontend Client** (frontend.yaml).
+**7. Deploy Frontend Client** (frontend.yaml).
 
-**10. Create Ingress with TLS** (ingress.yaml) to route traffic for frontend & backend via NGINX, secured with cert-manager.
+**8. Create Ingress with TLS** (ingress.yaml) to route traffic for frontend & backend via NGINX, secured with cert-manager.
 
-**11. Deploy StorageClass** (sc.yaml) to provision EBS volumes dynamically.
+**9. Deploy StorageClass** (sc.yaml) to provision EBS volumes dynamically.
 
-**12. Deploy Add-ons:**
+**10. Deploy Add-ons:**
 
 - EBS CSI Driver
 - NGINX Ingress Controller
 - cert-manager
 
-**13. Verify Deployment:**
+**11. Verify Deployment:**
 
 Check pods and services (kubectl get pods,svc -n prod)
 
