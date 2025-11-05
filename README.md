@@ -299,5 +299,5 @@ Node Exporter and kube-state-metrics endpoints are exposed for monitoring
 
 
 
-<img width="1606" height="703" alt="local-pagenew" src="https://github.com/user-attachments/assets/73fa7d4f-8574-4d7f-94c1-0c755d245b07" />
+
 
